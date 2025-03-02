@@ -1,3 +1,26 @@
+Metadata-Version: 2.2
+Name: crocolake
+Version: 0.1.0
+Summary: A datalake for ocean observations
+Author: Your Name
+Author-email: your.email@example.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: xarray>=2023.1.0
+Requires-Dist: pyarrow>=14.0.1
+Requires-Dist: netCDF4>=1.6.5
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: dask>=2023.1.0
+Requires-Dist: fsspec>=2023.1.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
 # CrocoLake
 
 CrocoLake is a datalake project for gathering physical and biogeochemical ocean observations, providing an efficient format and unified interface for data assimilation and ocean modeling activities.
@@ -40,18 +63,18 @@ converter.convert()
 
 ```
 crocolake/
-├── __init__.py
-├── converters/
-│   ├── __init__.py
-│   ├── base.py
-│   ├── csv_converter.py
-│   └── netcdf_converter.py
-├── loader/
-│   ├── __init__.py
-│   └── data_loader.py
-└── tests/
-    ├── __init__.py
-    └── test_converters.py
+â”œâ”€â”€ __init__.py
+â”œâ”€â”€ converters/
+â”‚   â”œâ”€â”€ __init__.py
+â”‚   â”œâ”€â”€ base.py
+â”‚   â”œâ”€â”€ csv_converter.py
+â”‚   â””â”€â”€ netcdf_converter.py
+â”œâ”€â”€ loader/
+â”‚   â”œâ”€â”€ __init__.py
+â”‚   â””â”€â”€ data_loader.py
+â””â”€â”€ tests/
+    â”œâ”€â”€ __init__.py
+    â””â”€â”€ test_converters.py
 ```
 
 ## Contributing
